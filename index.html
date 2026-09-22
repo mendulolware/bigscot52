@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BigScot52 — Casual CS2</title>
+  <meta name="description" content="BigScot52 — 52, Scottish lad, casual CS2 gamer. Here for a laugh and a good game.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span>BIG</span>SCOT<span>52</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#setup">Setup</a>
+      <a href="#rules">Vibe</a>
+      <a class="play" href="#contact">Say hello</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="status"><i></i> ONLINE • CASUAL MODE</div>
+        <h1>BigScot<span>52</span></h1>
+        <p class="tagline">Scottish lad. Casual gamer. Here for a laugh.</p>
+        <p class="intro">
+          52 and still clicking heads badly. I play CS2 for fun, good banter
+          and the occasional miracle round. No try-hard nonsense — just GG.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#about">Meet the lad ↓</a>
+          <a class="btn secondary" href="#rules">View the rules</a>
+        </div>
+        <div class="stats">
+          <div><strong>52</strong><span>YEARS YOUNG</span></div>
+          <div><strong>CS2</strong><span>MAIN GAME</span></div>
+          <div><strong>GG</strong><span>THE MISSION</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="ring"></div>
+        <img src="bigscot52-pfp.png" alt="BigScot52 gaming profile picture">
+        <div class="badge badge-one">🏴 SCOTLAND</div>
+        <div class="badge badge-two">🎮 CASUAL ONLY</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="grid two">
+        <article class="card bio-card">
+          <h2>Who is BigScot52?</h2>
+          <p>
+            Just a single Scottish lad enjoying a bit of CS2. I'm not here to
+            pretend I'm the next esports superstar — I'm here for the laughs,
+            the clutch that somehow works, and the teammates who don't mind
+            a bit of chaos.
+          </p>
+          <div class="quote">“Terrible aim. Questionable tactics. Excellent banter.”</div>
+        </article>
+        <article class="card facts">
+          <h3>PLAYER CARD</h3>
+          <dl>
+            <div><dt>Age</dt><dd>52</dd></div>
+            <div><dt>From</dt><dd>🏴 Scotland</dd></div>
+            <div><dt>Status</dt><dd>Single</dd></div>
+            <div><dt>Game</dt><dd>Counter-Strike 2</dd></div>
+            <div><dt>Style</dt><dd>Casual / for fun</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section id="setup" class="section dark-section">
+      <div class="section-label">02 / LOADOUT</div>
+      <h2>THE VERY SERIOUS SETUP</h2>
+      <div class="grid three">
+        <article class="card mini"><span class="icon">🖱️</span><h3>THE MOUSE</h3><p>Armed and ready. Accuracy sold separately.</p></article>
+        <article class="card mini"><span class="icon">🎧</span><h3>HEADSET</h3><p>For hearing footsteps — and teammates shouting.</p></article>
+        <article class="card mini"><span class="icon">☕</span><h3>FUEL</h3><p>Caffeine, stubbornness and Scottish determination.</p></article>
+      </div>
+    </section>
+
+    <section id="rules" class="section">
+      <div class="section-label">03 / THE VIBE</div>
+      <div class="grid two">
+        <article class="card rules">
+          <h2>SERVER RULES</h2>
+          <ul>
+            <li><span>01</span> Have a laugh.</li>
+            <li><span>02</span> Don't take casual too seriously.</li>
+            <li><span>03</span> Celebrate the lucky headshot.</li>
+            <li><span>04</span> Blame the ping when necessary.</li>
+            <li><span>05</span> Always say GG.</li>
+          </ul>
+        </article>
+        <article class="card contact" id="contact">
+          <div class="saltire">✕</div>
+          <h2>Fancy a game?</h2>
+          <p>Drop your Steam name and say hello. Casual players, banter merchants and fellow old-school gamers welcome.</p>
+          <button id="copyBtn" class="btn primary">Copy: BigScot52</button>
+          <small id="copyStatus">Steam name placeholder — change it in index.html if needed.</small>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 BIGSCOT52</span>
+    <span>MADE FOR GOOD BANter &amp; BAD AIM</span>
+  </footer>
+
+  <script>
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const name = 'BigScot52';
+      try {
+        await navigator.clipboard.writeText(name);
+        document.getElementById('copyStatus').textContent = 'Copied — see you in CS2, lad. 🎮';
+      } catch {
+        document.getElementById('copyStatus').textContent = 'Steam name: ' + name;
+      }
+    });
+  </script>
+</body>
+</html>
